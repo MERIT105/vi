@@ -13,7 +13,7 @@ from dateutil.relativedelta import relativedelta
 import time
 
 # Idef create_random_key()nsert your Telegram bot token here
-bot = telebot.TeleBot('7848878988:AAGspV9N8UzjPk3ZXeepPi5rgZc_OYelBAY') 
+bot = telebot.TeleBot('8047907032:AAFQ4PRBUC52ibR61Dsmw9ONXqCcBCXVYTM') 
 
 # -------------------------------
 REQUIRED_CHANNELS = {
@@ -28,7 +28,7 @@ REQUIRED_CHANNELS = {
 }
 
 # Admin user IDs
-admin_id = {"5712886230"}
+admin_id = {"5712886230","8029161065"}
 
 # -------------------------------
 def is_member(user_id, channel_info):
@@ -85,7 +85,7 @@ def save_keys():
         json.dump(keys, file)
 
 def create_random_key():
-    key = "ALONE-SANJU-" + ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
+    key = "SHER-" + ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
     keys[key] = {"status": "valid"}
     save_keys()
     return key
@@ -165,9 +165,9 @@ def start_command(message):
     if str(message.chat.id) in admin_id:
         markup.add(admin_panel_button)
     markup.add(attack_button, myinfo_button, redeem_button,  bot_sitting_button)
-    bot.reply_to(message, "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 ★ȺŁØNɆ☂࿐ꔪ┊™ 𝐃𝐃𝐎𝐒 𝐖𝐎𝐑𝐋𝐃!", reply_markup=markup)
+    bot.reply_to(message, "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 ★viki☂࿐ꔪ┊™ 𝐃𝐃𝐎𝐒 𝐖𝐎𝐑𝐋𝐃!", reply_markup=markup)
     
-admin_id = {"5712886230"}  # Existing admin IDs
+admin_id = {"5712886230","8029161065"}  # Existing admin IDs
 users = {}
 coins = {}
 
